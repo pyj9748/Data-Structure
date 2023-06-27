@@ -35,7 +35,7 @@ final class Heap<T> {
                 }
             } else {
                 let lidx = i * 2 + 1
-                if comparator(arr[i], arr[lidx]) {
+                if !comparator(arr[i], arr[lidx]) {
                     let temp = arr[lidx]
                     arr[lidx] = arr[i]
                     arr[i] = temp
